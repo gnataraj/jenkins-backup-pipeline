@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('get-backup-script') {
       steps {
-        git 'https://github.com/gnataraj/jenkins-backup-pipeline.git'
+        git(url: 'https://github.com/gnataraj/jenkins-backup-pipeline.git', branch: 'master')
       }
     }
 
