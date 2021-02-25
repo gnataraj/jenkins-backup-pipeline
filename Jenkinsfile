@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('get-backup-script') {
       steps {
-        sh 'rm jenkins-backup-pipeline'
         sh '''git clone https://github.com/gnataraj/jenkins-backup-pipeline.git
 '''
       }
