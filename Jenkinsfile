@@ -12,7 +12,7 @@ pipeline {
         sh '''git clone https://github.com/gnataraj/jenkins-backup-pipeline.git
 '''
         sh '''cd jenkins-backup-pipeline
-; sh bakup-script.sh $JENKINS_HOME/*.xml $BACKUP_FILE'''
+; sh bakup-script.sh ${JENKINS_HOME}/*.xml ${BACKUP_FILE}'''
       }
     }
 
