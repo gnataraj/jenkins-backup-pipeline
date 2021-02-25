@@ -1,4 +1,4 @@
-JENKINS_HOME=$1
+JENKINS_HOME=/home/jenkins
 
 TAR_FILE=$2
 
