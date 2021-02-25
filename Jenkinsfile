@@ -23,7 +23,7 @@ sh bakup-script.sh'''
 
     stage('artifacts') {
       steps {
-        archiveArtifacts 'jenkins-backup-pipeline/*.tar'
+        archiveArtifacts(artifacts: 'jenkins-backup-pipeline/*.tar', fingerprint: true)
       }
     }
 
