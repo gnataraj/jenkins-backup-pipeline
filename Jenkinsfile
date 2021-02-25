@@ -23,7 +23,7 @@ sh bakup-script.sh'''
 
     stage('artifacts') {
       steps {
-        archiveArtifacts '*.tar'
+        archiveArtifacts 'jenkins-backup-pipeline/*.tar'
       }
     }
 
