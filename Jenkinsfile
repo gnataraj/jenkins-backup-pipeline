@@ -3,6 +3,11 @@ pipeline {
     node {
       label 'master'
     }
+      parameters {
+        string(name: 'JENKINS_HOME', defaultValue: '/home/jenkins', description: 'Jenkins home dir?')
+        string(name: 'BACKUP_FILE', defaultValue: 'jenkins-bkp-` date +"%Y%m%d_%H%M%S"`.tar', description: 'Format for jenkins backupfile)
+
+    }
 
   }
   stages {
@@ -17,8 +22,5 @@ pipeline {
     }
 
   }
-  environment {
-    JENKINS_HOME = '/home/jenkins'
-    BACKUP_FILE = 'jenkins-bkp-` date +"%Y%m%d_%H%M%S"`.tar'
-  }
+  
 }
