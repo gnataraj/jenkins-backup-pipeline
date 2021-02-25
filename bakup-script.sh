@@ -1,6 +1,6 @@
 JENKINS_HOME=/home/jenkins
 
-TAR_FILE=$2
+TAR_FILE=jenkins-bkp-`date +"%Y%m%d_%H%M%S"`.tar
 
 echo "Creating backup bundle..."
 
