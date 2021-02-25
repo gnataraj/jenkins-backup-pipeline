@@ -21,5 +21,11 @@ sh bakup-script.sh'''
       }
     }
 
+    stage('artifacts') {
+      steps {
+        archiveArtifacts '*.tar'
+      }
+    }
+
   }
 }
